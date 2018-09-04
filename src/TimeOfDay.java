@@ -1,48 +1,11 @@
+import com.sun.xml.internal.txw2.IllegalAnnotationException;
+
 public class TimeOfDay {
 
 
     private int mhour;
     private int mMinutes;
-    private int hourcheck;
-    private int minutecheck;
 
-    public TimeOfDay() {
-        this(0,0);
-    }
-
-
-    public int getHourcheck(int pHour) {
-        return hourcheck;
-       if (23 < pHour) {
-           System.out.println("That number is to large");
-
-       if (23 > pHour) {
-           System.out.println();
-
-       }
-
-       if (59 < mMinutes) {
-
-           
-       }
-    }
-
-
-
-    public int getMinutecheck() {
-        return minutecheck;
-    }
-
-
-
-    public TimeOfDay(int pHour) {
-        this( pHour, 0);
-    }
-
-    public TimeOfDay(int phour, int pMinutes) {
-        this.mhour = phour;
-        this.mMinutes = pMinutes;
-    }
 
 
     public int getMhour() {
@@ -53,4 +16,41 @@ public class TimeOfDay {
         return mMinutes;
     }
 
+    public TimeOfDay() {
+        this(0, 0);
+
+    }
+
+
+    public TimeOfDay(int pHour) {
+    }
+
+
+    public TimeOfDay(int pHour, int pMinutes) {
+        if (pHour > 23 || pHour < 0 || pMinutes > 59 || pMinutes < 0)
+            throw new IllegalAnnotationException(
+                    "Bad input of time: Hour:" + pHour + " Minutes " + pMinutes
+                            + " " + TimeOfDay.class.getSimpleName());
+
+
+        this.mhour = pHour;
+        this.mMinutes = pMinutes;
+
+        if (pHour > 23 || pHour < 0) {
+            throw new IllegalArgumentException("Bad data Input: Hour " + pHour);
+
+
+        } else {
+            this.mhour = pHour;
+
+        }
+        if (pMinutes > 59 || pMinutes < 0) {
+            throw new IllegalArgumentException("Bad data Input: Minutes " + pMinutes);
+
+
+        } else {
+            this.mMinutes = pMinutes;
+        }
+
+    }
 }
