@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class ClassOverloading {
     private TimeOfDay now;
+    private TimeOfDay then;
 
     public static void main(String[] args) {
         ClassOverloading classoverloading = new ClassOverloading();
@@ -33,8 +34,11 @@ public class ClassOverloading {
             } else {
                 System.out.println("You have entered an invalid time:" + pHours + ":" + pMinutes + " please enter in a valid time");
             }
+
         }
         return null;
+
+
     }
 
     private boolean validhours (int pHours){

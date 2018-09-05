@@ -1,6 +1,6 @@
 import com.sun.xml.internal.txw2.IllegalAnnotationException;
 
-public class TimeOfDay {
+public class SecondDay {
 
 
     private int mhour;
@@ -15,21 +15,21 @@ public class TimeOfDay {
         return mMinutes;
     }
 
-    public TimeOfDay() {
+    public SecondDay() {
         this(0, 0);
 
     }
 
 
-    public TimeOfDay(int pHour) {
+    public SecondDay(int pHour) {
     }
 
 
-    public TimeOfDay(int pHour, int pMinutes) {
+    public SecondDay(int pHour, int pMinutes) {
         if (pHour > 23 || pHour < 0 || pMinutes > 59 || pMinutes < 0)
             throw new IllegalAnnotationException(
                     "Bad input of time: Hour:" + pHour + " Minutes " + pMinutes
-                            + " " + TimeOfDay.class.getSimpleName());
+                            + " " + SecondDay.class.getSimpleName());
 
 
         this.mhour = pHour;
