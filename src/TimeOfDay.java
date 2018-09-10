@@ -7,6 +7,8 @@ public class TimeOfDay {
     private int mMinutes;
 
 
+
+
     public int getMhour() {
         return mhour;
     }

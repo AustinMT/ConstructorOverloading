@@ -1,3 +1,5 @@
+import sun.util.resources.cldr.cs.CalendarData_cs_CZ;
+
 import java.sql.Time;
 import java.util.Scanner;
 
@@ -17,7 +19,10 @@ public class ClassOverloading {
         Scanner keyboard = new Scanner(System.in);
         System.out.println("Enter a time seperate the hour and minutes with a space");
         now = setTimeOfDay(keyboard, now);
+        then = setTimeOfDay(keyboard, then);
         System.out.println(now.getMhour() + ":" + now.getmMinutes());
+        System.out.println(then.getMhour() + ":" + then.getmMinutes());
+        Calc TimeEqual = new Calc(this.then,this.now);
     }
 
     public TimeOfDay setTimeOfDay(Scanner pkeyboard, TimeOfDay now) {
@@ -32,14 +37,23 @@ public class ClassOverloading {
                 valid = true;
                 return now;
             } else {
-                System.out.println("You have entered an invalid time:" + pHours + ":" + pMinutes + " please enter in a valid time");
+                System.out.println("You have entered an invalid time:"
+                        + pHours + ":" + pMinutes + " please enter in a valid time");
             }
 
-        }
+            System.out.println("\nSet your second time of day \n");
+
+
+
+            }
+
+
+
         return null;
 
 
     }
+
 
     private boolean validhours (int pHours){
         if (pHours < 23 && pHours > 0) {
@@ -61,7 +75,10 @@ public class ClassOverloading {
 
         }
 
+
+        }
+
     }
 
 
-}
+
