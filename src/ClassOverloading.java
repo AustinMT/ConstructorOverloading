@@ -17,12 +17,13 @@ public class ClassOverloading {
     public void init() {
 
         Scanner keyboard = new Scanner(System.in);
-        System.out.println("Enter a time seperate the hour and minutes with a space");
+        System.out.println("Enter a time with an hour and minutes");
         now = setTimeOfDay(keyboard, now);
         then = setTimeOfDay(keyboard, then);
         System.out.println(now.getMhour() + ":" + now.getmMinutes());
         System.out.println(then.getMhour() + ":" + then.getmMinutes());
-        Calc TimeEqual = new Calc(this.then,this.now);
+
+
     }
 
     public TimeOfDay setTimeOfDay(Scanner pkeyboard, TimeOfDay now) {
@@ -55,6 +56,7 @@ public class ClassOverloading {
     }
 
 
+
     private boolean validhours (int pHours){
         if (pHours < 23 && pHours > 0) {
 
@@ -66,14 +68,23 @@ public class ClassOverloading {
     private boolean validminutes (int pMinutes) {
         if (pMinutes < 59 && pMinutes > 0) {
             return true;
-        }
-        else {
+        } else {
             return false;
 
 
-
-
         }
+    }
+        private float time(TimeOfDay now, TimeOfDay then){
+            float hourDifference;
+            if (now.getMhour() - then.getMhour()!=0 ) {
+
+                 hourDifference = (Math.abs(now.getMhour()-then.getMhour()));
+
+            } else {
+
+                hourDifference = 0;
+
+            }
 
 
         }

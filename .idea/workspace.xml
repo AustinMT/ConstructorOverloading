@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="527f94ba-21e0-4f60-87c9-a896ca5f0fa8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Calc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Calc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calc.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ClassOverloading.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClassOverloading.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TimeOfDay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TimeOfDay.java" afterDir="false" />
     </list>
@@ -23,8 +22,8 @@
       <file leaf-file-name="ClassOverloading.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ClassOverloading.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+            <state relative-caret-position="133">
+              <caret line="76" column="21" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,8 +34,8 @@
       <file leaf-file-name="TimeOfDay.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TimeOfDay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-23">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="575">
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
             </state>
           </provider>
         </entry>
@@ -44,13 +43,11 @@
       <file leaf-file-name="Calc.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Calc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="136">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
               <folding>
-                <element signature="e#407#408#0" expanded="true" />
-                <element signature="e#437#438#0" expanded="true" />
-                <element signature="e#469#470#0" expanded="true" />
-                <element signature="e#500#501#0" expanded="true" />
+                <element signature="e#50#51#0" expanded="true" />
+                <element signature="e#80#81#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,8 +75,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/SecondDay.java" />
         <option value="$PROJECT_DIR$/src/TimeOfDay.java" />
-        <option value="$PROJECT_DIR$/src/ClassOverloading.java" />
         <option value="$PROJECT_DIR$/src/Calc.java" />
+        <option value="$PROJECT_DIR$/src/ClassOverloading.java" />
       </list>
     </option>
   </component>
@@ -94,6 +91,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -110,9 +110,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -205,7 +202,6 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32838285" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -216,12 +212,12 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48679867" visible="true" weight="0.2806354" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48514852" visible="true" weight="0.28517398" />
       <window_info id="Structure" order="1" sideWeight="0.5012531" side_tool="true" weight="0.25718608" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" sideWeight="0.5132013" side_tool="true" visible="true" weight="0.2806354" />
+      <window_info id="Favorites" order="2" sideWeight="0.5148515" side_tool="true" visible="true" weight="0.28517398" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -229,6 +225,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32838285" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -240,6 +237,34 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/ClassOverloading.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TimeOfDay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Calc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#50#51#0" expanded="true" />
+            <element signature="e#80#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ClassOverloading.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -353,30 +378,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TimeOfDay.java">
+    <entry file="file://$PROJECT_DIR$/src/Calc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-23">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#50#51#0" expanded="true" />
+            <element signature="e#80#81#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Calc.java">
+    <entry file="file://$PROJECT_DIR$/src/TimeOfDay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#407#408#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#469#470#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="575">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ClassOverloading.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+        <state relative-caret-position="133">
+          <caret line="76" column="21" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
