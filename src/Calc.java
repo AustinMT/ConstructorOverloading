@@ -1,13 +1,11 @@
 public class Calc {
 
+    boolean time;
 
-    public int getOutcome() {
-        return outcome;
+    public boolean getTime() {
+        return true;
+
     }
-
-    private int outcome;
-
-
 }
 
 

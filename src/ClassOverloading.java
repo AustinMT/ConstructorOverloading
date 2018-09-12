@@ -1,11 +1,11 @@
-import sun.util.resources.cldr.cs.CalendarData_cs_CZ;
-
-import java.sql.Time;
 import java.util.Scanner;
+
 
 public class ClassOverloading {
     private TimeOfDay now;
     private TimeOfDay then;
+    int hourDifference;
+    int minDifference;
 
     public static void main(String[] args) {
         ClassOverloading classoverloading = new ClassOverloading();
@@ -19,9 +19,17 @@ public class ClassOverloading {
         Scanner keyboard = new Scanner(System.in);
         System.out.println("Enter a time with an hour and minutes");
         now = setTimeOfDay(keyboard, now);
+        System.out.println("\nSet your second set of time of hours and minutes\n");
         then = setTimeOfDay(keyboard, then);
-        System.out.println(now.getMhour() + ":" + now.getmMinutes());
-        System.out.println(then.getMhour() + ":" + then.getmMinutes());
+        System.out.println("First Set of hours & minutes = "+now.getMhour() + ":" + now.getmMinutes());
+        System.out.println("Second Set of hours & minutes = "+then.getMhour() + ":" + then.getmMinutes());
+
+        if(time(now,then)) {
+            System.out.println("\n The time difference is " + hourDifference + ":" + minDifference);
+        }
+        else{
+            System.out.println("You gave the same times");
+        }
 
 
     }
@@ -42,12 +50,9 @@ public class ClassOverloading {
                         + pHours + ":" + pMinutes + " please enter in a valid time");
             }
 
-            System.out.println("\nSet your second time of day \n");
 
 
-
-            }
-
+        }
 
 
         return null;
@@ -56,8 +61,7 @@ public class ClassOverloading {
     }
 
 
-
-    private boolean validhours (int pHours){
+    private boolean validhours(int pHours) {
         if (pHours < 23 && pHours > 0) {
 
             return true;
@@ -65,7 +69,8 @@ public class ClassOverloading {
             return false;
         }
     }
-    private boolean validminutes (int pMinutes) {
+
+    private boolean validminutes(int pMinutes) {
         if (pMinutes < 59 && pMinutes > 0) {
             return true;
         } else {
@@ -74,22 +79,27 @@ public class ClassOverloading {
 
         }
     }
-        private float time(TimeOfDay now, TimeOfDay then){
-            float hourDifference;
-            if (now.getMhour() - then.getMhour()!=0 ) {
 
-                 hourDifference = (Math.abs(now.getMhour()-then.getMhour()));
+    private boolean time(TimeOfDay now, TimeOfDay then) {
 
-            } else {
+        if (now.getMhour() - then.getMhour() != 0 || now.getmMinutes() - then.getmMinutes() != 0) {
 
-                hourDifference = 0;
+            hourDifference = (Math.abs(now.getMhour() - then.getMhour()));
 
-            }
+            minDifference = (Math.abs(now.getmMinutes() - then.getmMinutes()));
+            return true;
 
+        } else {
 
+                System.out.println("This should not be happening");
+                return false;
         }
 
+
+
     }
+
+}
 
 
 

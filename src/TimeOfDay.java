@@ -1,11 +1,12 @@
 import com.sun.xml.internal.txw2.IllegalAnnotationException;
 
+import java.lang.reflect.Array;
+
 public class TimeOfDay {
 
 
     private int mhour;
     private int mMinutes;
-
 
 
 
@@ -54,5 +55,8 @@ public class TimeOfDay {
         }
 
 
+
     }
 }
+
+
